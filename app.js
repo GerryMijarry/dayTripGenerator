@@ -78,5 +78,5 @@ console.log("Your random day trip is going to " + selectedDestination + " and ea
 
 // (5 points): As a developer, I want all of my functions to have a Single Responsibility. Remember, each function should do just one thing!
 
-
+// All functions are single responsibility
 
