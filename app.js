@@ -30,7 +30,7 @@ let selectedRestaraunt = randomlySelectRestaraunt(restaraunts);
 
 // (5 points): As a user, I want a mode of transportation to be randomly selected for my day trip.
 
-let transportation = ["Car", "Bus", "Train", "Plane"]
+let transportation = ["car", "bus", "train", "plane"]
 
 function randomlySelectTransportation (array) {
     return array[Math.floor(Math.random() * array.length)];
@@ -40,7 +40,7 @@ let selectedTransportation = randomlySelectTransportation(transportation);
 
 // (5 points): As a user, I want a form of entertainment to be randomly selected for my day trip.
 
-let entertainment = ["Movie", "Museums", "Bar hopping", "Tour guide"]
+let entertainment = ["movie", "museums", "bar hopping", "tour guide"]
 
 function randomlySelectEntertainment (array) {
     return array[Math.floor(Math.random() * array.length)];
@@ -50,7 +50,7 @@ let selectedEntertainment = randomlySelectEntertainment(entertainment);
 
 // (15 points): As a user, I want to be able to randomly re-select a destination, restaurant, mode of transportation, and/or form of entertainment if I don’t like one or more of those things.
 
-let dayTrip = prompt("Your random day trip is going to " + selectedDestination + " and eating " + selectedRestaraunt + " and getting there by " + selectedTransportation + " to do " + selectedEntertainment + " Type accept to accept the trip or press ok to re-generate a day trip." ); 
+let dayTrip = prompt("Your random day trip is going to " + selectedDestination + " and eating " + selectedRestaraunt + " food, getting there by " + selectedTransportation + " to do " + selectedEntertainment + ". Type accept to accept the trip or press ok to re-generate a day trip." ); 
 
 while (dayTrip != "accept") {
     
@@ -59,7 +59,7 @@ while (dayTrip != "accept") {
     selectedTransportation = randomlySelectTransportation(transportation);
     selectedEntertainment = randomlySelectEntertainment(entertainment);
 
-    dayTrip = prompt("Your random day trip is going to " + selectedDestination + " and eating " + selectedRestaraunt + " and getting there by " + selectedTransportation + " to do " + selectedEntertainment + " Type accept to accept the trip or press ok to re-generate a day trip." ); 
+    dayTrip = prompt("Your random day trip is going to " + selectedDestination + " and eating " + selectedRestaraunt + " food, getting there by " + selectedTransportation + " to do " + selectedEntertainment + ". Type accept to accept the trip or press ok to re-generate a day trip." ); 
 }
 
 // (10 points): As a user, I want to be able to confirm that my day trip is “complete” once I like all of the random selections.
