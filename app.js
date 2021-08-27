@@ -38,7 +38,6 @@ function randomlySelectTransportation (array) {
 
 let selectedTransportation = randomlySelectTransportation(transportation);
 
-
 // (5 points): As a user, I want a form of entertainment to be randomly selected for my day trip.
 
 let entertainment = ["Movie", "Museums", "Bar hopping", "Tour guide"]
@@ -60,11 +59,8 @@ while (dayTrip != "accept") {
     selectedTransportation = randomlySelectTransportation(transportation);
     selectedEntertainment = randomlySelectEntertainment(entertainment);
 
-    prompt("Your random day trip is going to " + selectedDestination + " and eating " + selectedRestaraunt + " and getting there by " + selectedTransportation + " to do " + selectedEntertainment + " Type accept to accept the trip or press ok to re-generate a day trip." ); 
+    dayTrip = prompt("Your random day trip is going to " + selectedDestination + " and eating " + selectedRestaraunt + " and getting there by " + selectedTransportation + " to do " + selectedEntertainment + " Type accept to accept the trip or press ok to re-generate a day trip." ); 
 }
-
-
-
 
 // (10 points): As a user, I want to be able to confirm that my day trip is “complete” once I like all of the random selections.
 
